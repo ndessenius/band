@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				"album-cover": "url('/panic-panini-album.jpg')",
+				"album-cover": "url('/cover.svg')",
 				"incoming-shows": "url('/coming-shows-bg.jpg')",
 				"hero-pattern": "url('/pattern.png')",
 			},
