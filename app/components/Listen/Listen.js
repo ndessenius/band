@@ -20,14 +20,16 @@ export default function Listen() {
 			<Container customClasses="flex flex-col lg:flex-row">
 				<div className="flex flex-col justify-center basis-2/4 lg:max-w-lg xl:max-w-2xl 2xl:max-w-4xl">
 					<p>Bientôt disponible :</p>
-					<h2 className="pb-6 text-6xl font-bold">Le Creux de la vague</h2>
+					<h2 className="inline-block pb-6 text-5xl font-semibold text-transparent bg-gradient-to-tl from-slate-800 via-violet-500 to-zinc-400 bg-clip-text">Le Creux de la vague</h2>
 					<p>Sortie le 27 septembre 2024 sur toutes les plateformes de Streaming. 🎉</p>
+
+					<p className="py-4 subpixel-antialiased font-light font-permanentMarker "> Précommandez sur <a className="hover:text-medium-blue" href="https://music.apple.com/us/album/le-creux-de-la-vague/1770182110?uo=4" target="_blank">iTunes ! </a></p>
 					<div className="flex items-center gap-4 pt-4">
-						<Spotify />
+						<Spotify extraClasses="fill-black hover:fill-green-500 transition-all"/>
 						{/* <SoundCloud /> */}
-						<Youtube />
+						<Youtube extraClasses="fill-black hover:fill-red-700 transition-all" />
 						{/* <Tidal /> */}
-						<AppleMusic />
+						<a href="https://music.apple.com/us/album/le-creux-de-la-vague/1770182110?uo=4" target="_blank"><AppleMusic extraClasses="fill-black hover:fill-red-700 transition-all" /></a>
 					</div>
 				</div>
 				<div className="flex items-center justify-center mt-20 basis-2/4 lg:mt-0 lg:justify-end">
